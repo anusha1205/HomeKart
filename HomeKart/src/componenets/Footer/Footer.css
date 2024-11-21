@@ -1,0 +1,81 @@
+.contact-section {
+    background-color: #e3bed0;
+    padding: 16px;
+    color: e3bed0;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+.contact-email a {
+    color: #000;
+    text-decoration: none;
+}
+
+.contact-second-box{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.app-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-link {
+    display: flex;
+    text-decoration: none;
+    color: #000;
+}
+
+.app-link img {
+    margin-right: 5px;
+}
+.footer-extra {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+.footer-section {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.footer-section h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.3rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.footer-section ul li:hover {
+    text-decoration: underline;
+}

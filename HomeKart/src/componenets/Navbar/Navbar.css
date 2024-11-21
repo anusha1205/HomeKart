@@ -1,0 +1,192 @@
+/* Navbar Container */
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #512439;
+  /* Matches your theme */
+  color: white;
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section (Logo and Title) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1%;
+}
+
+.navbar-logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  font-family: Garamond, serif;
+  font-size: 3rem;
+  font-weight: normal;
+  color: white;
+}
+
+
+/* Center Section (Search Bar) */
+.navbar-center {
+  margin: 0 20px;
+  display: flex;
+  gap: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-center a {
+  align-self: center;
+  width: 7%;
+}
+
+.navbar-search {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Right Section (Menu Buttons) */
+.navbar-right {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-button:hover {
+  color: #b87395;
+}
+
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: black;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+}
+
+.modal-split {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.modal-left,
+.modal-right {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-left {
+  background-color: #f0f0f0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.modal-left h2 {
+  margin-bottom: 10px;
+  color: #512439;
+  /* Your theme color */
+}
+
+.modal-left p {
+  color: #333;
+}
+
+.modal-right {
+  padding: 20px;
+}
+
+.modal-right h3 {
+  margin-bottom: 15px;
+  color: #512439;
+}
+
+.modal-right label {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.modal-right input,
+.modal-right select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-submit {
+  background-color: #512439;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.modal-switch {
+  background: none;
+  color: #512439;
+  border: none;
+  cursor: pointer;
+}

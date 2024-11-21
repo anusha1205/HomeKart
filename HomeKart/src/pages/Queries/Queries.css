@@ -1,0 +1,270 @@
+.queries-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    min-height: calc(100vh - 300px);
+}
+
+.queries-header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.queries-header-main h1 {
+    color: #2c3e50;
+    margin: 0;
+}
+
+.new-query-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.new-query-button:hover {
+    background-color: #2980b9;
+}
+
+.queries-list {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.queries-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.queries-controls h3 {
+    color: #2c3e50;
+    margin: 0;
+}
+
+.filter-queries {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #2c3e50;
+    cursor: pointer;
+}
+
+.queries-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.query-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.query-item:hover {
+    transform: translateY(-3px);
+}
+
+.query-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.query-status {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.open .query-status {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.resolved .query-status {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.in.progress .query-status {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.query-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.query-item h4 {
+    color: #2c3e50;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.query-description {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.view-details {
+    background: none;
+    border: 2px solid #3498db;
+    color: #3498db;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-details:hover {
+    background: #3498db;
+    color: white;
+}
+
+.no-queries {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+}
+
+.no-queries h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.new-query-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.submit-query {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-query:hover {
+    background-color: #27ae60;
+}
+
+.cancel-query {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cancel-query:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .queries-header-main {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .queries-controls {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .queries-container {
+        padding: 0 1rem;
+    }
+
+    .queries-list {
+        padding: 1rem;
+    }
+
+    .modal-content {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons button {
+        width: 100%;
+    }
+}

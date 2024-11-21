@@ -1,0 +1,14 @@
+npm install vite --save-dev
+npm install react-scripts
+
+npm audit fix --force
+npm start
+npm run dev
+
+steps:
+rm node_modules
+Y
+
+
+rm -rf node_modules package-lock.json
+but in debugging section not in powershell
