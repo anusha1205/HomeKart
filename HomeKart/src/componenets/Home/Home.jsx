@@ -73,26 +73,7 @@ const Home = () => {
 
 
             {/* New Map Section */}
-            <section className="map-section">
-                <div className="map-container">
-                    <h3>Search Home Sellers Nearby</h3>
-                    <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
-                        <GoogleMap
-                            mapContainerStyle={mapContainerStyle}
-                            center={center}
-                            zoom={13}
-                        >
-                            {sellers.map((seller, index) => (
-                                <MarkerF
-                                    key={index}
-                                    position={{ lat: seller.lat, lng: seller.lng }}
-                                    title={seller.name}
-                                />
-                            ))}
-                        </GoogleMap>
-                    </LoadScript>
-                </div>
-            </section>
+            
 
 
             <section className="product-section">
