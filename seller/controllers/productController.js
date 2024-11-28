@@ -60,10 +60,10 @@ const removeProduct = async(req,res)=>{
         fs.unlink(`uploads/${product.image}` , ()=>{})//image deletion from folder
 
         await productModel.findByIdAndDelete(req.body.id);
-        req.json({success:true , message:"Product removed"});
+        res.json({success:true , message:"Product removed"});
     } catch (error) {
         console.log(error);
-        req.json({success:false, message:"Error aya"});
+        res.json({success:false, message:"Error aya"});
     }
 } 
 
