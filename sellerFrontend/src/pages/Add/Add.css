@@ -1,0 +1,125 @@
+/* Add.css */
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 50%;
+    background-color: #e4e4e4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.add-image-upload img {
+    
+    width: 100%;
+    max-width: 150px;
+    border: solid black;
+    /* border-radius: 5px; */
+    border-width: 1px;
+    padding: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: block;
+}
+
+.add-image-upload p {
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+}
+
+textarea {
+    resize: none;
+}
+
+.add-category-price {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    
+    gap: 16px;
+    
+}
+
+.add-price input {
+    width: 100%;
+    
+}
+
+button.add-button {
+    padding: 10px;
+    text-align: center;
+    width: 40%;
+    background-color: #0d1f32;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 16px;
+    transition: background-color 0.3s;
+}
+
+button.add-button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+label {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .add-category-price {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,88 @@
+.queries-dashboard {
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.filter-container {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.filter-container select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.queries-columns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.queries-column {
+    /* flex: 1; */
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.queries-column h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.query-box {
+    background-color: #dee3f1;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.query-box h3 {
+    margin: 0 0 0.5rem;
+    color: #2c3e50;
+}
+
+.query-box p {
+    margin: 0.5rem 0;
+    color: #7f8c8d;
+}
+
+.query-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.query-actions button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.query-actions button:first-child {
+    background-color: #27ae60;
+    color: white;
+}
+
+.query-actions button:first-child:hover {
+    background-color: #1e8449;
+}
+
+.query-actions .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.query-actions .delete-btn:hover {
+    background-color: #c0392b;
+}

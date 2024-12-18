@@ -10,24 +10,6 @@ const Navbar = () => {
   const [isLogin, setIsLogin] = useState(false);
   const [favouriteCount, setFavouriteCount] = useState(0);
 
-  // useEffect(() => {
-  //   const updateFavCount = () => {
-  //     const favourites = JSON.parse(localStorage.getItem('favourites')) || [];
-  //     setFavouriteCount(favourites.length);
-  //   };
-
-  //   updateFavCount();
-
-  //   // Listen for storage events
-  //   window.addEventListener('storage', updateFavCount);
-  //   window.addEventListener('favouritesUpdated', updateFavCount);
-
-  //   return () => {
-  //     window.removeEventListener('storage', updateFavCount);
-  //     window.removeEventListener('favouritesUpdated', updateFavCount);
-  //   };
-  // }, []);
-
 
   const toggleModal = () => {
     setShowModal(!showModal);

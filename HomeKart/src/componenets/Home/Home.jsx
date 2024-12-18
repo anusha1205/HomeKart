@@ -33,7 +33,7 @@ const Home = () => {
 
     return (
         <div className="home">
-            <section className="tagline-section" style={{ backgroundColor: '#e3bed0' }}>
+            <section className="tagline-section">
                 <div className="tagline-content">
                     <h2>Your One-Stop Shop for Unique Home Products</h2>
                     <p><ul><li>HomeKart connects buyers with the best home-based entrepreneurs.</li></ul></p>
