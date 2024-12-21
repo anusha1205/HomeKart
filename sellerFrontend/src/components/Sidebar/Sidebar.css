@@ -1,10 +1,13 @@
+body{
+    background-color: rgb(239, 253, 251);
+}
 .sidebar {
-    width: 200px;
+    width: 250px;
     height: 100vh;
-    background-color: #f8f9fa;
+    
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    
     padding: 20px;
 
 }
@@ -26,10 +29,11 @@
     border-width: 1px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    background-color: #eff2f6;
 }
 
 .sidebar-option:hover {
-    background-color: #e9ecef;
+    background-color: #c8d2dc;
 }
 
 .sidebar-option img {

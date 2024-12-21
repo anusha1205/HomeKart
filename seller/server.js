@@ -2,6 +2,10 @@ import express from "express";
 import cors from "cors";
 import { connectDB } from "./config/db.js";
 import productRouter from "./routes/productRoute.js"
+import customerRouter from "./routes/customerRoute.js";
+import 'dotenv/config'
+
+
 
 // App config
 const app = express();
@@ -12,12 +16,12 @@ app.use(express.json());
 app.use(cors());
 
 // Connect to MongoDB
-connectDB(); 
+connectDB();
 
 //api endpoints
 app.use("/api/product", productRouter)
-app.use("/images",express.static('uploads'))
-
+app.use("/images", express.static('uploads'))
+app.use("/api/customer", customerRouter)
 
 // Routes
 app.get("/", (req, res) => {
